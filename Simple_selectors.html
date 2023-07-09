@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Selectors</title>
+
+    <style>
+        h1,p{
+            /* Element Selectors */
+            color: red;
+            font-family: cursive;
+        }
+
+        .heet{
+            /* Class Selector */
+            background-color: bisque;
+            border: 2px solid gray;
+            border-radius: 10px;
+            padding-left: 8px;
+        }
+
+        h2{
+            background-color: aqua;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        div h2{
+            /* Element element */
+            font-family: facile sans;
+        }
+
+        div.vishwa h2{
+            /* element class, element */
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            background-color: aquamarine;
+        }
+
+        div.vishwa h2.shridhar
+        {
+            font-family: fantasy;
+            background-color: blanchedalmond;
+        }
+
+        #vivo{
+            /* Id Selectors */
+            color: blueviolet;
+            font-size: 40px;
+        }
+
+        *{
+            /* Universal Selector */
+            /* margin: 0px; */
+            /* padding: ; */
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- https://www.w3schools.com/cssref/trysel.php?selector=id -->
+
+    <h1>Id Selectors >>> Class Selectors >>> Element Selectors</h1>
+
+    <h2 class="heet">h2.heet</h2>
+
+    <h1 class="heet">h1.heet</h1>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, nam?</p>
+
+    <div>
+        <h2>div h2</h2>
+    </div>
+
+    <div class="vishwa">
+        <h2>div.vishwa h2</h2>
+        <h2 class="shridhar">div.vishwa h2.shridhar</h2>
+        <h2 class="shridhar" id="vivo">#vivo &nbsp;&nbsp; div.vishwa h2.shridhar</h2>
+    </div>
+
+</body>
+</html>
