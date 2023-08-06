@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conic Gradient</title>
+    <style>
+        .box{
+            width: 150px;
+            height: 150px;
+            /* border: 2px solid red; */
+            margin: 20px;
+            float: left;
+            border-radius: 50%;
+        }
+        
+        .b1{
+            background-image: conic-gradient(red, yellow, green);
+        }
+
+        .b2{
+            background-image: conic-gradient(from -160deg,red, yellow, blue);
+        }
+
+        .b3{
+            background-image: conic-gradient(red, yellow, green, red);
+        }
+
+        .b4{
+            background-image: conic-gradient(at 30% 40%,red, yellow, green, red);
+        }
+
+        .b5{
+            background-image: conic-gradient(#fff 0deg, #fff 90deg, skyblue 90deg, skyblue 180deg, #fff 180deg, #fff 270deg, skyblue 270deg, skyblue 360deg);
+        }
+
+        .b5{
+            background-image: conic-gradient(black 0deg, black 90deg, skyblue 90deg, skyblue 180deg, black 180deg, black 270deg, skyblue 270deg, skyblue 360deg);
+        }
+
+        .b6{
+            background-image: repeating-conic-gradient(red 10deg, red 20deg, yellow 20deg, yellow 30deg);
+        }
+
+        
+        .b7{
+            background-image: repeating-conic-gradient(rgba(0,0,0,0) 10deg, rgba(0,0,0,0) 20deg, rgba(0,0,0,0.5) 20deg, rgba(0,0,0,0.5) 30deg);
+            background-color: antiquewhite;
+        }
+
+        .b8{
+            background-image: repeating-conic-gradient(#fff 0deg, #fff 90deg, black 90deg, black 180deg);
+            background-size: 30px 30px;
+            border-radius: 0;
+            /* border: 2px solid red; */
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="box b1"></div>
+    <div class="box b2"></div>
+    <div class="box b3"></div>
+    <div class="box b4"></div>
+    <div class="box b5"></div>
+    <div class="box b6"></div>
+    <div class="box b7"></div>
+    <div class="box b8"></div>
+
+</body>
+</html>
