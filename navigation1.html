@@ -11,26 +11,90 @@
             padding: 0;
             box-sizing: border-box;
         }
+
         .container{
             width: 100vw;
-            height: 100px;
-            border: 2px solid red;
+            /* height: 100px; */
+            /* border: 2px solid red; */
+            background-color: rgb(23, 23, 99);
         }
 
         .container ul{
-            border: 3px solid blue;
+            /* border: 3px solid blue; */
         }
 
         .container ul li{
-            border: 3px solid green;
+            /* border: 3px solid green; */
             display: inline-block;
-            margin: 10px 60px 10px;
+            margin: 10px 40px 10px;
             padding: 20px;
-            font
         }
 
         .container ul li a{
             text-decoration: none;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 1.5rem;
+            color: #fff;
+        }
+
+        .container ul li a:hover{
+            color: aqua;
+            font-family: cursive;
+            font-size: 1.3rem;
+            /* background-color: bisque; */
+        }
+
+        /* Pseudo Elements selectors: 
+                ::after
+                ::before
+                ::first-letter  ---
+                ::first-line    ---
+                ::selection
+                ::placeholder
+        
+        */ 
+
+        h1::before{
+            color: red;
+            background-color: aquamarine;
+            content: '😊😊How Are you??? ';
+            display: block;
+        }
+
+        h1::after{
+            content: ' Fine';
+            background-color: blue;
+            display: block;
+        }
+
+        p.heet::first-line{
+        /* p.heet::first-letter{ */
+            color: red;
+            font-size: 2rem;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: antiquewhite;
+        }
+
+        li::first-line{
+            color: green;
+            font-size: 2rem;
+        }
+
+        p::selection{
+            background-color: red;
+            color: bisque   ;
+        }
+
+        /* ::selection{ */
+        li::selection{
+            color: cadetblue;
+            background-color: black;
+        }
+
+        ::placeholder{
+            color: chocolate;
+            font-family: cursive;
+            font-size: 0.8rem;
         }
     </style>
 </head>
@@ -45,5 +109,42 @@
             <li><a href="#">Contact Us</a></li>
         </ul>
     </div>
+    <br><br>
+
+
+    <h1>Hello Heet & Vishwa</h1>
+
+
+    <br><br>
+    <p class="heet">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur commodi hic vel voluptas doloribus veritatis veniam alias, enim maxime perferendis aliquid, atque vero explicabo nostrum neque reprehenderit dolorem maiores aliquam in dicta et debitis. Repellat incidunt ratione soluta sapiente illo animi debitis, odit aut labore nobis dolores dicta aperiam, mollitia perferendis rerum, nesciunt fugit corporis. Reprehenderit consectetur sapiente, exercitationem recusandae tempora consequuntur iure veritatis esse ipsum nostrum a atque obcaecati voluptates commodi sit asperiores earum eligendi odio impedit, rem ut. Tempore, illum esse numquam repudiandae et distinctio rerum nulla, perspiciatis adipisci quidem qui natus ducimus quos optio, aut omnis ad.
+    </p>
+    <br><br>
+    <h1>Registration Form</h1>
+    <br>
+
+    <form action="">
+        <label for="fname">Name: </label>
+        <input type="text" id="fname" placeholder="Enter your Full Name" name="Fullname">
+
+        <br><br>
+        <label for="lname">Surname: </label>
+        <input type="text" id="lname" placeholder="Enter your Surname" name="lname">
+
+        <br>
+
+    </form>
+    <br>
+
+
+    <ul>
+        <li>Harsh Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit, placeat fugit ipsam eligendi iste voluptatem repellendus itaque est et amet quam nulla optio, consequatur dolorem commodi, cupiditate aperiam? Minima fuga accusamus animi minus repellendus quae quo blanditiis ullam esse dolores.</li>
+        <li>Manoj</li>
+        <li>Ashok</li>
+        <li>Rekha</li>
+        <li>Aman</li>
+    </ul>
+    <br><br>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem ut tempora nihil cum non corrupti? Omnis, voluptas velit! Nihil ipsam fugit, praesentium beatae similique iure quasi sed nesciunt autem! Architecto neque ad eum commodi voluptates culpa ducimus fugit accusamus! Similique, voluptate quae. Totam officia maxime dolor, eveniet veritatis aspernatur vel quaerat suscipit. Repudiandae quam eum veritatis soluta provident sed repellat qui ad distinctio, esse nulla quis aliquid magni perspiciatis atque nostrum corrupti illo voluptatibus quo illum laudantium fugit. Porro eos quisquam repudiandae praesentium consequatur tenetur hic dignissimos deserunt amet architecto. Totam, odit? Libero nemo dicta architecto nulla blanditiis deserunt iste?</p>
 </body>
 </html>
