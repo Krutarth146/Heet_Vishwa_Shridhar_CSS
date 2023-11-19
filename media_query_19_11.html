@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+
+    <style>
+
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: cursive;
+        }
+
+        .container{
+            width: 100%;
+            background-color: antiquewhite;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        
+        .box{
+            min-width: 200px;
+            text-align: center;
+            background-color: burlywood;
+            padding: 20px;
+            margin: 10px;
+        }
+
+
+        @media screen and (max-width: 450px) {
+            .box{
+                flex-basis: 100%;
+            }
+
+            body{
+                background-color: aqua;
+            }
+        }
+
+        @media screen and (min-width: 451px) and (max-width:1024px)
+        {
+            .box{
+                flex-basis: calc(50% - 20px);
+            }
+
+            body{
+                background-color: lightcoral;
+            }
+        }
+
+        @media screen and (min-width:1025px)
+        {
+            .box{
+                flex-basis: calc(33% - 20px);
+            }
+
+            body{
+                background-color: chartreuse;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">Hello Aman</div>
+        <div class="box">Hello Heet</div>
+        <div class="box">Hello Vishwa</div>
+        <div class="box">Hello Dhiraj Sir</div>
+    </div>
+</body>
+</html>

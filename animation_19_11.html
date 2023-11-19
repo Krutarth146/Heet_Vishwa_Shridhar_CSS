@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: aquamarine;
+            /* animation-name: bounce;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: cubic-bezier(0.755, 0.05, 0.155, 0.06);
+            animation-delay: 0s;
+            animation-fill-mode: both;
+            animation-direction: alternate; */
+            margin: 40px;
+            /* border-radius: 50%; */
+            animation: bounce 3s infinite cubic-bezier(0.755, 0.05, 0.155, 0.06) 0s;
+        }
+
+        @keyframes bounce {
+            0%{
+                transform: rotate(0deg);
+            }
+
+            100%{
+                transform: rotate(180deg);
+                background-color: blue;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        
+    </div>
+</body>
+</html>
